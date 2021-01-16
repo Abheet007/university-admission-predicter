@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>College Predictor</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "/static/style/style.css"
+    <!-- Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/5de545e21a.js" crossorigin="anonymous"></script>
+ 
+</head>
+  <body>
+    <div class="container register">
+      <div class="row">
+          <div class="col-md-3 register-left">
+              <img src="https://dianasmusings.files.wordpress.com/2015/09/icon.png?w=736" alt="" style="width:170px;height:170px;"/>
+              <h3>Welcome</h3>
+              <p>You are 30 seconds away from predicting your College!</p>
+          </div>
+          <div class="col-md-9 register-right">
+              <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <h3 class="register-heading"><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;&nbsp;Predict Your College</h3>
+
+  <!-- ****************** Form Begins Here ***************** -->
+  <form method = "POST" action = "/prediction_wala_page">
+                      <div class="row register-form">
+                          <div class="col-md-12">
+                              <div class="form-group">
+                                  <input type="text" name = "firstname" class="form-control" placeholder="First Name *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="text" name = "lastname" class="form-control" placeholder="Last Name *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="number" name = "gre_score" class="form-control" placeholder="GRE Score *" value="" />
+                              </div>
+                              <div class="form-group">
+                                  <input type="number" name = "toefl_score" class="form-control"  placeholder="TOEFL Score *" value="" />
+                              </div>
+                              <div class="form-group">
+                                <input type="number" name = "univ_rating" class="form-control"  placeholder="University Rating *" value="" />
+                            </div>                              
+                            <div class="form-group">
+                                <input type="number" name = "sop" class="form-control"  placeholder="SOP *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name = "lor" class="form-control"  placeholder="LOR *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="number" name = "cgpa" class="form-control"  placeholder="CGPA *" value="" />
+                            </div>                            
+                            <div class="form-group">
+                                <input type="number" name = "research" class="form-control"  placeholder="Research *" value="" />
+                            </div>
+                            <div class="form-group">
+                                  <div class="maxl">
+                                      <label class="radio inline"> 
+                                          <input type="radio" name="gender" value="male" checked>
+                                          <span> Male </span> 
+                                      </label>
+                                      <label class="radio inline"> 
+                                          <input type="radio" name="gender" value="female">
+                                          <span>Female </span> 
+                                      </label>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btnRegister"  value="Predict"/>
+                          </div>
+                      </div>
+                  </div>
+</form>
+</div></div></div></div></div></div>
+  </div>
+  <div class="footer" style="position: fixed;left: 0;bottom: 0;width: 100%;background-color: #181818;color: white;text-align: center;">
+    <p style="padding-top:6px">&#169;&nbsp;Abheet Singh, Ayushi Singh</p>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
